@@ -1,0 +1,77 @@
+body{
+  background: rgb(233, 230, 230);
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+
+.nav img{
+  height: 5rem;
+  align-self: center;
+  margin: 0 1.5rem;
+  padding: 0 1rem;
+}
+.nav button{
+  height: 2.5rem;
+  font-size: medium;
+  background: #000;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 10px;
+  align-self: center;
+  margin: 0 3rem;
+  padding: 0 1rem;
+}
+
+.nav button:hover{
+  background: #fff;
+  color: #000;
+}
+
+.lds-dual-ring {
+  margin:10% 50%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.userlist{
+  display: grid;
+}
+#card{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.profile{
+  display: flex;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 2rem;
+  background: white;
+  gap: 2rem;
+}
